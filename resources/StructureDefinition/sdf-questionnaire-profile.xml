@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-questionnaire" />
+  <meta>
+    <lastUpdated value="2017-06-15T21:26:15.014+02:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir" />
+  </extension>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-questionnaire" />
+  <name value="sdf-questionnaire" />
+  <status value="draft" />
+  <date value="2017-05-09T12:16:50.5767729+02:00" />
+  <publisher value="Norwegian Directorate for eHealth" />
+  <description value="To support structured, hierarchical registration of data gathered using digital forms and other questionnaires." />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Questionnaire" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="Questionnaire.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.endpoint">
+      <path value="Questionnaire.extension" />
+      <sliceName value="endpoint" />
+      <short value="Endpoint for completed Questionnaire" />
+      <definition value="Endpoint containing information where to send the Questionnaire on completion" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint" />
+      </type>
+    </element>
+    <element>
+      <path value="Questionnaire.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Questionnaire.version" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Questionnaire.date" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.entryFormat">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="entryFormat" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/entryFormat" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.maxDecimalPlaces">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="maxDecimalPlaces" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.maxValue">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="maxValue" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/maxValue" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.minLength">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="minLength" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/minLength" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.minValue">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="minValue" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/minValue" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.regex">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="regex" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/regex" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

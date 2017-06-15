@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-endpoint" />
+  <meta>
+    <lastUpdated value="2017-06-15T21:26:17.505+02:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint" />
+  <name value="sdf-endpoint" />
+  <status value="draft" />
+  <date value="2017-06-15T14:27:59.2241292+02:00" />
+  <description value="Endpoint containing information where to send the Questionnaire on completion" />
+  <fhirVersion value="3.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint" />
+    </element>
+  </differential>
+</StructureDefinition>

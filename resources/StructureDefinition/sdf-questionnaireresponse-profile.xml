@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-questionnaireresponse" />
+  <meta>
+    <lastUpdated value="2017-06-15T21:26:12.319+02:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir" />
+  </extension>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-questionnaireresponse" />
+  <name value="sdf-questionnaireresponse" />
+  <status value="draft" />
+  <date value="2017-05-16T11:45:05.6828168+02:00" />
+  <description value="To support structured, hierarchical registration of data gathered using digital forms and other questionnaires." />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="QuestionnaireResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="QuestionnaireResponse.identifier" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-QuestionnaireResponse" />
+      </type>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.questionnaire" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-Questionnaire" />
+      </type>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-Person" />
+      </type>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="QuestionnaireResponse.item.entryFormat">
+      <path value="QuestionnaireResponse.item.extension" />
+      <sliceName value="entryFormat" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/entryFormat" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
