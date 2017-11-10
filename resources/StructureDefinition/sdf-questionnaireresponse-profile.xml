@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-questionnaireresponse" />
   <meta>
-    <lastUpdated value="2017-11-10T14:45:17.906+01:00" />
+    <lastUpdated value="2017-11-10T15:11:31.402+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
@@ -51,35 +51,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sdf-questionnaire" />
-      </type>
-    </element>
-    <element id="QuestionnaireResponse.subject">
-      <path value="QuestionnaireResponse.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-Person" />
-      </type>
-    </element>
-    <element id="QuestionnaireResponse.item.extension">
-      <path value="QuestionnaireResponse.item.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="QuestionnaireResponse.item.entryFormat">
-      <path value="QuestionnaireResponse.item.extension" />
-      <sliceName value="entryFormat" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/entryFormat" />
       </type>
     </element>
   </differential>
