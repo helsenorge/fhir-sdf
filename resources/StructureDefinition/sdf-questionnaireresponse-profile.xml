@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-questionnaireresponse" />
   <meta>
-    <lastUpdated value="2017-06-15T21:26:12.319+02:00" />
+    <lastUpdated value="2017-11-10T14:45:17.906+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
@@ -19,11 +19,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
   <derivation value="constraint" />
   <differential>
-    <element>
+    <element id="QuestionnaireResponse.identifier">
       <path value="QuestionnaireResponse.identifier" />
       <min value="1" />
     </element>
-    <element>
+    <element id="QuestionnaireResponse.basedOn">
       <path value="QuestionnaireResponse.basedOn" />
       <type>
         <code value="Reference" />
@@ -39,17 +39,21 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-QuestionnaireResponse" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sdf-questionnaireresponse" />
       </type>
     </element>
-    <element>
+    <element id="QuestionnaireResponse.questionnaire">
       <path value="QuestionnaireResponse.questionnaire" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-Questionnaire" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/sdf-questionnaire" />
       </type>
     </element>
-    <element>
+    <element id="QuestionnaireResponse.subject">
       <path value="QuestionnaireResponse.subject" />
       <type>
         <code value="Reference" />
@@ -60,7 +64,7 @@
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/SDF-Person" />
       </type>
     </element>
-    <element>
+    <element id="QuestionnaireResponse.item.extension">
       <path value="QuestionnaireResponse.item.extension" />
       <slicing>
         <discriminator>
