@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-validationText" />
+  <meta>
+    <lastUpdated value="2017-07-14T13:20:54.102+02:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-validationtext" />
+  <name value="sdf-validationText" />
+  <status value="draft" />
+  <date value="2017-07-14T12:59:42.6764629+02:00" />
+  <publisher value="The Norwegian Directorate of eHealth" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire.item" />
+  <context value="ElementDefinition" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-validationtext" />
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

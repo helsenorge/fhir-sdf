@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-questionnaire" />
   <meta>
-    <lastUpdated value="2017-06-15T21:26:15.014+02:00" />
+    <lastUpdated value="2017-11-10T10:23:21.995+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
@@ -20,7 +20,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
   <differential>
-    <element>
+    <element id="Questionnaire.extension">
       <path value="Questionnaire.extension" />
       <slicing>
         <discriminator>
@@ -41,20 +41,20 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-endpoint" />
       </type>
     </element>
-    <element>
+    <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element>
+    <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Questionnaire.date">
       <path value="Questionnaire.date" />
       <min value="1" />
     </element>
-    <element>
+    <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />
       <slicing>
         <discriminator>
@@ -110,6 +110,18 @@
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/regex" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:validationText">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="validationText" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-validationtext" />
       </type>
     </element>
   </differential>
