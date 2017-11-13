@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-repeatsText" />
+  <meta>
+    <lastUpdated value="2017-11-13T12:04:39.201+01:00" />
+  </meta>
+  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-repeatstext" />
+  <name value="sdf-repeatsText" />
+  <status value="draft" />
+  <date value="2017-11-13T08:42:03.967+01:00" />
+  <publisher value="The Norwegian Directorate of eHealth" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire.item" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-repeatstext" />
+    </element>
+    <element id="Extension.value[x]:repeatsText">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

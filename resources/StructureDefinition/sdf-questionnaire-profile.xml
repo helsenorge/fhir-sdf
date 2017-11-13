@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-questionnaire" />
   <meta>
-    <lastUpdated value="2017-11-10T10:29:50.98+01:00" />
+    <lastUpdated value="2017-11-13T12:06:18.009+01:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
@@ -98,6 +98,18 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-validationtext" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:repeatsText">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="repeatsText" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-repeatstext" />
       </type>
     </element>
   </differential>
