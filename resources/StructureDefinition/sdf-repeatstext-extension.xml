@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sdf-repeatsText" />
+  <id value="repeatsText" />
   <meta>
-    <lastUpdated value="2017-11-13T12:04:39.201+01:00" />
+    <lastUpdated value="2018-02-02T14:14:14.339+01:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-repeatstext" />
-  <name value="sdf-repeatsText" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/repeatstext" />
+  <name value="repeatsText" />
   <status value="draft" />
   <date value="2017-11-13T08:42:03.967+01:00" />
   <publisher value="The Norwegian Directorate of eHealth" />
@@ -20,7 +20,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-repeatstext" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/repeatstext" />
     </element>
     <element id="Extension.value[x]:repeatsText">
       <path value="Extension.valueString" />
