@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sdf-expression" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-expression" />
-  <name value="expression" />
+  <id value="sdf-fhirpath" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath" />
+  <name value="fhirPath" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
@@ -16,7 +16,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-expression" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath" />
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
