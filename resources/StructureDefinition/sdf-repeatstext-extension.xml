@@ -9,6 +9,7 @@
   <status value="draft" />
   <date value="2017-11-13T08:42:03.967+01:00" />
   <publisher value="The Norwegian Directorate of eHealth" />
+  <description value="Text the system will display for the &quot;Add new item/section&quot; button." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -22,7 +23,7 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/repeatstext" />
     </element>
-    <element id="Extension.value[x]:repeatsText">
+    <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
       <sliceName value="valueString" />
       <type>

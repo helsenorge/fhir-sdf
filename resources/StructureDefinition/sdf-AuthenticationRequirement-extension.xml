@@ -4,6 +4,7 @@
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-authenticationrequirement" />
   <name value="authenticationRequirement" />
   <status value="draft" />
+  <description value="Describes the Authentication Requirement for the Questionnaire" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

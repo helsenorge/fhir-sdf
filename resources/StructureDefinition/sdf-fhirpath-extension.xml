@@ -4,6 +4,7 @@
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath" />
   <name value="fhirPath" />
   <status value="draft" />
+  <description value="Contains a FHIRPath expression which the system will use to retrieve data from other resources and then populate the QuestionnaireResponse with that data." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

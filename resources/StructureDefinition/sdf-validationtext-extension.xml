@@ -9,6 +9,7 @@
   <status value="draft" />
   <date value="2017-07-14T12:59:42.6764629+02:00" />
   <publisher value="The Norwegian Directorate of eHealth" />
+  <description value="Instructions to help the respondent if the item/field does not validate." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
