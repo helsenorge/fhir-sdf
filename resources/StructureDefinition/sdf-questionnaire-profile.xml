@@ -60,13 +60,22 @@
     <element id="Questionnaire.extension:accessibilityToResponse">
       <path value="Questionnaire.extension" />
       <sliceName value="accessibilityToResponse" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-accessibilitytoresponse" />
+      </type>
+    </element>
+    <element id="Questionnaire.extension:discretion">
+      <path value="Questionnaire.extension" />
+      <sliceName value="discretion" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-accessibilitytoresponse" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-discretion" />
       </type>
     </element>
     <element id="Questionnaire.item.extension">
