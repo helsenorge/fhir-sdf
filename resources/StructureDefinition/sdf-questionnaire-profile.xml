@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-Questionnaire" />
   <meta>
@@ -69,9 +69,6 @@
     <element id="Questionnaire.extension:discretion">
       <path value="Questionnaire.extension" />
       <sliceName value="discretion" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -203,26 +200,12 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath" />
       </type>
     </element>
-    <element id="Questionnaire.item.option.value[x]">
-      <path value="Questionnaire.item.option.value[x]" />
+    <element id="Questionnaire.item.extension:optionReference">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="optionReference" />
       <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="date" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Coding" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Reference" />
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-optionReference" />
       </type>
     </element>
   </differential>
