@@ -1,0 +1,22 @@
+{
+    "resourceType": "ValueSet",
+    "id": "sdf-questionnaire-navigator-state",
+    "url": "http://helsenorge.no/fhir/ValueSet/sdf-questionnaire-navigator-state",
+    "name": "SDFQuestionnaireNavigatorState",
+    "title": "SDF Questionnaire Navigator State Codes",
+    "jurisdiction": [{
+            "coding": [{
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "NO",
+                    "display": "Norway"
+                }
+            ]
+        }
+    ],
+    "compose": {
+        "include": [{
+                "system": "http://helsenorge.no/fhir/CodeSystem/sdf-questionnaire-navigator-state"
+            }
+        ]
+    }
+}
