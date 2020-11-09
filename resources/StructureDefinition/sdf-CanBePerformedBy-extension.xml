@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-canbeperformedby" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-canbeperformedby" />
   <name value="canBePerformedBy" />
   <status value="draft" />
   <description value="Describes if anyone else than the actual subject can respond to the Questionnaire." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire" />
+  <context>
+    <expression value="Questionnaire" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

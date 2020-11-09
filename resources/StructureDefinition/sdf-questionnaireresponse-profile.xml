@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-QuestionnaireResponse" />
   <meta>
@@ -12,7 +11,7 @@
   <status value="draft" />
   <date value="2017-05-16T11:45:05.6828168+02:00" />
   <description value="To support structured, hierarchical registration of data gathered using digital forms and other questionnaires." />
-  <fhirVersion value="3.0.0" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
