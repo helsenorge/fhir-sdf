@@ -1,1 +1,18 @@
-<ValueSet xmlns="http://hl7.org/fhir"><id value="TQQC" /><version value="1" /><name value="TQQC" /><title value="Technical Questionnaire Question Codes" /><status value="draft" /><date value="2018-06-18T00:00:00+02:00" /><publisher value="The Norwegian Directorate of eHealth" /><extensible value="true" /><compose><include><system value="http://ehelse.no/fhir/ValueSet/TQQC" /><concept><code value="1" /><display value="Technical endpoint for receiving QuestionnaireResponse" /></concept></include></compose></ValueSet>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TQQC" />
+  <version value="1" />
+  <name value="TQQC" />
+  <title value="Technical Questionnaire Question Codes" />
+  <status value="draft" />
+  <date value="2018-06-18T00:00:00+02:00" />
+  <publisher value="The Norwegian Directorate of eHealth" />
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/ValueSet/TQQC" />
+      <concept>
+        <code value="1" />
+        <display value="Technical endpoint for receiving QuestionnaireResponse" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

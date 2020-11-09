@@ -1,54 +1,50 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="questionnaire-item-control"/> 
-  <meta> 
-    <lastUpdated value="2017-04-19T07:44:43.294+10:00"/> 
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/> 
-  </meta> 
-  <text> 
-    <status value="generated"/> 
+  <id value="questionnaire-item-control" />
+  <meta>
+    <lastUpdated value="2019-11-01T09:29:23.356+11:00" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <text>
+    <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h2> Questionnaire Item UI Control Codes</h2> 
-      <div> 
-        <p>Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire.</p> 
-      </div> 
-      <p> This value set includes codes from the following code systems:</p> 
-      <ul> 
-        <li> Include all codes defined in 
-          <a href="codesystem-questionnaire-item-control.html">
-            <code> http://hl7.org/fhir/questionnaire-item-control</code> 
-          </a> 
-        </li> 
-      </ul> 
-    </div> 
-  </text> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
-    <valueString value="Informative"/> 
-  </extension> 
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/> 
-  </extension> 
-  <url value="http://hl7.org/fhir/ValueSet/questionnaire-item-control"/> 
-  <identifier> 
-    <system value="urn:ietf:rfc:3986"/> 
-    <value value="urn:oid:2.16.840.1.113883.4.642.3.848"/> 
-  </identifier> 
-  <version value="3.0.1"/> 
-  <name value="Questionnaire Item UI Control Codes"/> 
-  <status value="draft"/> 
-  <experimental value="true"/> 
-  <date value="2017-04-19T07:44:43+10:00"/> 
-  <publisher value="HL7 International - Patient Care WG"/> 
-  <contact> 
-    <telecom> 
-      <system value="url"/> 
-      <value value="http://www.hl7.org/Special/committees/patientcare"/> 
-    </telecom> 
-  </contact> 
-  <description value="Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire."/> 
-  <immutable value="true"/> 
-  <compose> 
-    <include> 
-      <system value="http://hl7.org/fhir/questionnaire-item-control"/> 
-    </include> 
-  </compose> 
-</ValueSet> 
+      <h2>Questionnaire Item UI Control Codes</h2>
+      <div>
+        <p>Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire.</p>
+      </div>
+      <p>This value set includes codes from the following code systems:</p>
+      <ul>
+        <li>Include all codes defined in 
+          
+                    <a href="codesystem-questionnaire-item-control.html"><code>http://hl7.org/fhir/questionnaire-item-control</code></a></li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir" />
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/questionnaire-item-control" />
+  <identifier>
+    <system value="urn:ietf:rfc:3986" />
+    <value value="urn:oid:2.16.840.1.113883.4.642.3.931" />
+  </identifier>
+  <version value="4.0.1" />
+  <name value="QuestionnaireItemUIControlCodes" />
+  <title value="Questionnaire Item UI Control Codes" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-11-01T09:29:23+11:00" />
+  <publisher value="HL7 International - Patient Care WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/patientcare" />
+    </telecom>
+  </contact>
+  <description value="Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire." />
+  <immutable value="true" />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/questionnaire-item-control" />
+    </include>
+  </compose>
+</ValueSet>

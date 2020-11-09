@@ -1,15 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-discretion" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-discretion" />
   <name value="discretion" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire" />
-  <context value="QuestionnaireResponse" />
+  <context>
+    <expression value="Questionnaire" />
+  </context>
+  <context>
+    <expression value="QuestionnaireResponse" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

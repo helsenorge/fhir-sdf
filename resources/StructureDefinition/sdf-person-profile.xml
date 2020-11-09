@@ -1,10 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-Person" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-Person" />
   <name value="sdf-Person" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Person" />
