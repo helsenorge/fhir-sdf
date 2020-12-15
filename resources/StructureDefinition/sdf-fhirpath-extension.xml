@@ -1,18 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-fhirpath" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath" />
-  <name value="fhirPath" />
+  <name value="FhirPath" />
   <status value="draft" />
   <description value="Contains a FHIRPath expression which the system will use to retrieve data from other resources and then populate the QuestionnaireResponse with that data." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
-    <type value="extension" />
+    <type value="element" />
     <expression value="Questionnaire.item" />
   </context>
   <context>
-    <type value="extension" />
+    <type value="element" />
     <expression value="ElementDefinition" />
   </context>
   <type value="Extension" />
@@ -23,8 +24,17 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-fhirpath" />
     </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />

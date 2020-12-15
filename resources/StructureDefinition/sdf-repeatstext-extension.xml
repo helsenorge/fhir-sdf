@@ -1,18 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="repeatsText" />
   <meta>
     <lastUpdated value="2018-02-02T14:14:14.339+01:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/repeatstext" />
-  <name value="repeatsText" />
+  <name value="RepeatsText" />
   <status value="draft" />
   <date value="2017-11-13T08:42:03.967+01:00" />
   <publisher value="The Norwegian Directorate of eHealth" />
   <description value="Text the system will display for the &quot;Add new item/section&quot; button." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
+    <type value="element" />
     <expression value="Questionnaire.item" />
   </context>
   <type value="Extension" />
@@ -23,8 +25,17 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/repeatstext" />
     </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />

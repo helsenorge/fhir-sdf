@@ -1,21 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="validationText" />
   <meta>
     <lastUpdated value="2018-02-02T14:17:18.905+01:00" />
   </meta>
   <url value="http://ehelse.no/fhir/StructureDefinition/validationtext" />
-  <name value="validationText" />
+  <name value="ValidationText" />
   <status value="draft" />
   <date value="2017-07-14T12:59:42.6764629+02:00" />
   <publisher value="The Norwegian Directorate of eHealth" />
   <description value="Instructions to help the respondent if the item/field does not validate." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
+    <type value="element" />
     <expression value="Questionnaire.item" />
   </context>
   <context>
+    <type value="element" />
     <expression value="ElementDefinition" />
   </context>
   <type value="Extension" />
@@ -26,8 +29,17 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/validationtext" />
     </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />

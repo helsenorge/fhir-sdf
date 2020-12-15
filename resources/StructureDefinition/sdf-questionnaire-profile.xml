@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-Questionnaire" />
   <meta>
@@ -7,12 +8,12 @@
     <valueCode value="fhir" />
   </extension>
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-Questionnaire" />
-  <name value="sdf-Questionnaire" />
+  <name value="SDFQuestionnaire" />
   <status value="draft" />
   <date value="2017-05-09T12:16:50.5767729+02:00" />
   <publisher value="Norwegian Directorate for eHealth" />
   <description value="To support structured, hierarchical registration of data gathered using digital forms and other questionnaires." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Questionnaire" />
@@ -100,8 +101,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/entryFormat" />
       </type>
     </element>
-    <element id="Questionnaire.item.extension:entryFormat.valueString:valueString">
-      <path value="Questionnaire.item.extension.valueString" />
+    <element id="Questionnaire.item.extension:entryFormat.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:entryFormat.value[x]:valueString">
+      <path value="Questionnaire.item.extension.value[x]" />
       <sliceName value="valueString" />
     </element>
     <element id="Questionnaire.item.extension:maxDecimalPlaces">
@@ -112,8 +122,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces" />
       </type>
     </element>
-    <element id="Questionnaire.item.extension:maxDecimalPlaces.valueInteger:valueInteger">
-      <path value="Questionnaire.item.extension.valueInteger" />
+    <element id="Questionnaire.item.extension:maxDecimalPlaces.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:maxDecimalPlaces.value[x]:valueInteger">
+      <path value="Questionnaire.item.extension.value[x]" />
       <sliceName value="valueInteger" />
     </element>
     <element id="Questionnaire.item.extension:maxValue">
@@ -132,8 +151,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/minLength" />
       </type>
     </element>
-    <element id="Questionnaire.item.extension:minLength.valueInteger:valueInteger">
-      <path value="Questionnaire.item.extension.valueInteger" />
+    <element id="Questionnaire.item.extension:minLength.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:minLength.value[x]:valueInteger">
+      <path value="Questionnaire.item.extension.value[x]" />
       <sliceName value="valueInteger" />
     </element>
     <element id="Questionnaire.item.extension:minValue">
@@ -152,8 +180,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/regex" />
       </type>
     </element>
-    <element id="Questionnaire.item.extension:regex.valueString:valueString">
-      <path value="Questionnaire.item.extension.valueString" />
+    <element id="Questionnaire.item.extension:regex.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:regex.value[x]:valueString">
+      <path value="Questionnaire.item.extension.value[x]" />
       <sliceName value="valueString" />
     </element>
     <element id="Questionnaire.item.extension:validationText">
@@ -182,8 +219,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" />
       </type>
     </element>
-    <element id="Questionnaire.item.extension:itemControl.valueCodeableConcept:valueCodeableConcept">
-      <path value="Questionnaire.item.extension.valueCodeableConcept" />
+    <element id="Questionnaire.item.extension:itemControl.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:itemControl.value[x]:valueCodeableConcept">
+      <path value="Questionnaire.item.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
     </element>
     <element id="Questionnaire.item.extension:hidden">
@@ -194,8 +240,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" />
       </type>
     </element>
-    <element id="Questionnaire.item.extension:hidden.valueBoolean:valueBoolean">
-      <path value="Questionnaire.item.extension.valueBoolean" />
+    <element id="Questionnaire.item.extension:hidden.value[x]">
+      <path value="Questionnaire.item.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:hidden.value[x]:valueBoolean">
+      <path value="Questionnaire.item.extension.value[x]" />
       <sliceName value="valueBoolean" />
     </element>
     <element id="Questionnaire.item.extension:fhirPath">

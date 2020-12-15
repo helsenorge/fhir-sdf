@@ -1,6 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="TQQC" />
-  <version value="1" />
+  <url value="http://ehelse.no/fhir/ValueSet/TQQC" />
+  <version value="4.0.1" />
   <name value="TQQC" />
   <title value="Technical Questionnaire Question Codes" />
   <status value="draft" />
