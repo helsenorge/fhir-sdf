@@ -1,13 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-authenticationrequirement" />
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-authenticationrequirement" />
-  <name value="authenticationRequirement" />
+  <name value="AuthenticationRequirement" />
   <status value="draft" />
   <description value="Describes the Authentication Requirement for the Questionnaire" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
+    <type value="element" />
     <expression value="Questionnaire" />
   </context>
   <type value="Extension" />
@@ -18,15 +20,24 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehelse.no/fhir/StructureDefinition/sdf-authenticationrequirement" />
     </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.value[x]:valueCoding">
-      <path value="Extension.valueCoding" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCoding" />
       <type>
         <code value="Coding" />
       </type>
     </element>
     <element id="Extension.value[x]:valueCoding.system">
-      <path value="Extension.valueCoding.system" />
+      <path value="Extension.value[x].system" />
       <fixedUri value="http://ehelse.no/fhir/ValueSet/AuthenticationRequirement" />
     </element>
   </differential>

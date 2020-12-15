@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-QuestionnaireResponse" />
   <meta>
@@ -7,11 +8,11 @@
     <valueCode value="fhir" />
   </extension>
   <url value="http://ehelse.no/fhir/StructureDefinition/sdf-QuestionnaireResponse" />
-  <name value="sdf-QuestionnaireResponse" />
+  <name value="SDFQuestionnaireResponse" />
   <status value="draft" />
   <date value="2017-05-16T11:45:05.6828168+02:00" />
   <description value="To support structured, hierarchical registration of data gathered using digital forms and other questionnaires." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
@@ -31,9 +32,6 @@
     <element id="QuestionnaireResponse.extension:discretion">
       <path value="QuestionnaireResponse.extension" />
       <sliceName value="discretion" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
