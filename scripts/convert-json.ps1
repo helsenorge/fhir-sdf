@@ -1,4 +1,4 @@
-folder = "out/json"
+$folder = "out/json"
 
 $folders = Get-ChildItem -Path "resources" -directory
 
