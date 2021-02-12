@@ -1,0 +1,27 @@
+name: Convert to json and publish to npm
+
+on:
+  push:
+    branches: [master]
+    paths: 'version.txt'
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: npm
+    steps:
+    - uses: actions/checkout@v2
+    - name: Generate json files
+      run: ./scripts/convert-json.ps1
+      shell: pwsh
+    - name: Add package information
+      run: ./scripts/npm-package.ps1
+      shell: pwsh
+    - name: Publish package
+      working-directory: out/json
+      run: |
+        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+        npm install --ignore-scripts -no-cache
+        npm publish --access public
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

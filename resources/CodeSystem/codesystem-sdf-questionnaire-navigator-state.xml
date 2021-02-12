@@ -1,0 +1,19 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sdf-questionnaire-navigator-state" />
+  <url value="http://helsenorge.no/fhir/CodeSystem/sdf-questionnaire-navigator-state" />
+  <name value="SDFQuestionnaireNavigatorState" />
+  <title value="SDF Questionnaire Navigator State Codes" />
+  <description value="The SDF Questionnaire Navigator State Codes to put the Form Filler in different navigator states" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="NO" />
+      <display value="Norway" />
+    </coding>
+  </jurisdiction>
+  <concept>
+    <code value="navigator" />
+    <display value="Navigator" />
+    <definition value="A simple Table of Contents navigator style that helps you navigate within a one-page Questionnaire" />
+  </concept>
+</CodeSystem>
