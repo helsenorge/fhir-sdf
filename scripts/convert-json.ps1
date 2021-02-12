@@ -3,7 +3,7 @@ $outfolder = "out/json"
 $folders = Get-ChildItem -Path "resources" -directory
 
 # Check that output folder exists
-If (!(test-path $outfolder)) {
+If (!(Test-Path $outfolder)) {
   New-Item -ItemType Directory -Force -Path $outfolder
 }
 

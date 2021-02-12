@@ -5,7 +5,7 @@ $packagefile = "package.json"
 $versionfile = "../../version.txt"
 
 # Check that json files exists
-If (!(test-path $packagefolder)) {
+If (!(Test-Path $packagefolder)) {
   Write-Host "The package folder was not found. Convert files first!"
   exit 1
 }
