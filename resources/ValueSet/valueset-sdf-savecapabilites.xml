@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="http://helsenorge.no/fhir/ValueSet/sdf-savecapabilites" />
+	<name value="SDFSaveCapabilities" />
+	<compose>
+		<include>
+			<system value="http://helsenorge.no/fhir/CodeSystem/sdf-savecapabilites" />
+		</include>
+	</compose>
+</ValueSet>

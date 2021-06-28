@@ -1,0 +1,16 @@
+{
+    "resourceType": "CodeSystem",
+    "url": "http://helsenorge.no/fhir/CodeSystem/sdf-savecapabilites",
+    "name": "SDFSaveCapabilities",
+    "concept": [{
+            "code": "1",
+            "display": "Lagring av endelig versjon og mellomlagring"
+        }, {
+            "code": "2",
+            "display": "Kun lagring av endelig versjon"
+        }, {
+            "code": "3",
+            "display": "Ingen lagring"
+        }
+    ]
+}

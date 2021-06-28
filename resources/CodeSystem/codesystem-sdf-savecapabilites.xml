@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<url value="http://helsenorge.no/fhir/CodeSystem/sdf-savecapabilites" />
+	<name value="SDFSaveCapabilities" />
+	<concept>
+		<code value="1" />
+		<display value="Lagring av endelig versjon og mellomlagring" />
+	</concept>
+	<concept>
+		<code value="2" />
+		<display value="Kun lagring av endelig versjon" />
+	</concept>
+	<concept>
+		<code value="3" />
+		<display value="Ingen lagring" />
+	</concept>
+</CodeSystem>
