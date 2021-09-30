@@ -1,6 +1,6 @@
 {
     "resourceType": "CodeSystem",
-    "url": "http://helsenorge.no/fhir/CodeSystem/sdf-savecapabilites",
+    "url": "http://helsenorge.no/fhir/CodeSystem/sdf-save-capabilities",
     "name": "SDFSaveCapabilities",
     "concept": [{
             "code": "1",

@@ -34,7 +34,7 @@
       <path value="Extension.value[x].system" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://helsenorge.no/fhir/ValueSet/sdf-savecapabilites" />
+        <valueSet value="http://helsenorge.no/fhir/ValueSet/sdf-save-capabilities" />
       </binding>
     </element>
   </differential>

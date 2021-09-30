@@ -1,10 +1,10 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://helsenorge.no/fhir/ValueSet/sdf-savecapabilites",
+    "url": "http://helsenorge.no/fhir/ValueSet/sdf-save-capabilities",
     "name": "SDFSaveCapabilities",
     "compose": {
         "include": [{
-                "system": "http://helsenorge.no/fhir/CodeSystem/sdf-savecapabilites"
+                "system": "http://helsenorge.no/fhir/CodeSystem/sdf-save-capabilities"
             }
         ]
     }
