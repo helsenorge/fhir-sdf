@@ -1,0 +1,19 @@
+{
+    "resourceType": "CodeSystem",
+    "url": "http://helsenorge.no/fhir/CodeSystem/RenderOptions",
+    "name": "RenderOptions",
+    "concept": [
+        {
+            "code": "1",
+            "display": "Default"
+        },
+        {
+            "code": "2",
+            "display": "PDF Only"
+        },
+        {
+            "code": "3",
+            "display": "Form Filler Only"
+        }
+    ]
+}
