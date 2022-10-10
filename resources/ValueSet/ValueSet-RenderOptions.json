@@ -1,0 +1,1 @@
+{"resourceType":"ValueSet","url":"http://helsenorge.no/fhir/ValueSet/RenderOptions","name":"RenderOptions","compose":{"include":[{"system":"http://helsenorge.no/fhir/CodeSystem/RenderOptions"}]}}
