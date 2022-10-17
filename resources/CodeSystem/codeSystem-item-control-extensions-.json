@@ -1,0 +1,1 @@
+{"resourceType":"CodeSystem","url":"http://helsenorge.no/fhir/CodeSystem/item-control-extensions","name":"item-control-extensions","concept":[{"code":"sidebar","display":"Sidebar"},{"code":"summary-container","display":"Summary Container"}]}
