@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdf-endpoint" />
+  <url value="https://ehelse.no/fhir/StructureDefinition/sdf-endpoint" />
+  <name value="SDFEndpoint" />
+  <status value="draft" />
+  <description value="To support declaring endpoints used for data exchange." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Endpoint" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Endpoint.managingOrganization">
+      <path value="Endpoint.managingOrganization" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.managingOrganization.identifier">
+      <path value="Endpoint.managingOrganization.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.managingOrganization.identifier.system">
+      <path value="Endpoint.managingOrganization.identifier.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.managingOrganization.identifier.value">
+      <path value="Endpoint.managingOrganization.identifier.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.managingOrganization.display">
+      <path value="Endpoint.managingOrganization.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.payloadMimeType">
+      <path value="Endpoint.payloadMimeType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Endpoint.header">
+      <path value="Endpoint.header" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
