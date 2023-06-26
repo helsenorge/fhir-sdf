@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="AccessibilityToResponse" />
   <version value="4.0.1" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/sdf-accessibilitytoresponse" />
+  <url value="http://ehelse.no/fhir/ValueSet/sdf-accessibilitytoresponse" />
   <name value="AccessibilityToResponse" />
   <title value="Accessibility to Response" />
   <status value="draft" />
