@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sdf-Questionnaire" />
   <meta>
-    <lastUpdated value="2018-02-14T13:24:28.119+01:00" />
+    <lastUpdated value="2023-06-26T16:02:37.4215447+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir" />
@@ -29,11 +29,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Questionnaire.extension:endpoint">
       <path value="Questionnaire.extension" />
       <sliceName value="endpoint" />
       <short value="Where to send this Qu" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-questionnaire-endpoint" />
@@ -42,6 +44,7 @@
     <element id="Questionnaire.extension:authenticationRequirement">
       <path value="Questionnaire.extension" />
       <sliceName value="authenticationRequirement" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -51,6 +54,7 @@
     <element id="Questionnaire.extension:canBePerformedBy">
       <path value="Questionnaire.extension" />
       <sliceName value="canBePerformedBy" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -60,6 +64,7 @@
     <element id="Questionnaire.extension:accessibilityToResponse">
       <path value="Questionnaire.extension" />
       <sliceName value="accessibilityToResponse" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -69,6 +74,7 @@
     <element id="Questionnaire.extension:discretion">
       <path value="Questionnaire.extension" />
       <sliceName value="discretion" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -92,10 +98,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Questionnaire.item.extension:entryFormat">
       <path value="Questionnaire.item.extension" />
       <sliceName value="entryFormat" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/entryFormat" />
@@ -117,6 +125,7 @@
     <element id="Questionnaire.item.extension:maxDecimalPlaces">
       <path value="Questionnaire.item.extension" />
       <sliceName value="maxDecimalPlaces" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces" />
@@ -138,6 +147,7 @@
     <element id="Questionnaire.item.extension:maxValue">
       <path value="Questionnaire.item.extension" />
       <sliceName value="maxValue" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/maxValue" />
@@ -146,6 +156,7 @@
     <element id="Questionnaire.item.extension:minLength">
       <path value="Questionnaire.item.extension" />
       <sliceName value="minLength" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/minLength" />
@@ -167,6 +178,7 @@
     <element id="Questionnaire.item.extension:minValue">
       <path value="Questionnaire.item.extension" />
       <sliceName value="minValue" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/minValue" />
@@ -175,6 +187,7 @@
     <element id="Questionnaire.item.extension:regex">
       <path value="Questionnaire.item.extension" />
       <sliceName value="regex" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/regex" />
@@ -196,6 +209,7 @@
     <element id="Questionnaire.item.extension:validationText">
       <path value="Questionnaire.item.extension" />
       <sliceName value="validationText" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -205,6 +219,7 @@
     <element id="Questionnaire.item.extension:repeatsText">
       <path value="Questionnaire.item.extension" />
       <sliceName value="repeatsText" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -214,6 +229,7 @@
     <element id="Questionnaire.item.extension:itemControl">
       <path value="Questionnaire.item.extension" />
       <sliceName value="itemControl" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" />
@@ -235,6 +251,7 @@
     <element id="Questionnaire.item.extension:hidden">
       <path value="Questionnaire.item.extension" />
       <sliceName value="hidden" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" />
@@ -256,6 +273,7 @@
     <element id="Questionnaire.item.extension:fhirPath">
       <path value="Questionnaire.item.extension" />
       <sliceName value="fhirPath" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -265,6 +283,7 @@
     <element id="Questionnaire.item.extension:optionReference">
       <path value="Questionnaire.item.extension" />
       <sliceName value="optionReference" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://ehelse.no/fhir/StructureDefinition/sdf-optionReference" />
